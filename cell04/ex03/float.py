@@ -2,7 +2,8 @@
 
 in_num = input("Give me a number: ")
 
-if str(in_num).isnumeric():
+if str(in_num).isdigit():
     print("This number is an integer.")
-#elif str(in_num).isdecimal() is False:
-#    print("This number is a decimal.")
+#elif str(in_num).isdecimal():
+else:
+    print("This number is a decimal.")
