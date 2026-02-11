@@ -4,9 +4,10 @@ import sys
 
 an_array = sys.argv
 
-if len(an_array) -1 >= 1:
-    print("parameters: " + str(len(an_array) - 1))
-    for x in range(1, len(an_array)):
-        print(f"{an_array[x]}: {len(an_array[x])}")
+if len(an_array) - 1 >= 1:
+    if an_array[1].count("z") > 0:
+        print("z" * an_array[1].count("z"))
+    else:
+        print("none")
 else:
     print("none")
